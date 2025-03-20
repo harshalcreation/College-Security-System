@@ -1,0 +1,61 @@
+
+    <% layout("layouts/boilerplate.ejs") %>
+   
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          margin: 0;
+          background-image: url(images/bg.png);
+          background-color: #f4f4f4;
+        }
+        .button {
+          display: flex;
+          
+          align-items: center;
+          justify-content: space-between;
+          gap: 10px;
+          padding: 15px 20px;
+          margin: 10px;
+          font-size: 16px;
+          font-weight: bold;
+          color: white;
+          border: none;
+          border-radius: 8px;
+          margin-top: 67px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+        .customer-support {
+          background-color: #007bff;
+          justify-content: space-between;
+        }
+        .customer-support:hover {
+          background-color: #0056b3;
+        }
+        .emergency-call {
+          background-color: #ff4d4d;
+          justify-content: space-between;
+        }
+        .emergency-call:hover {
+          background-color: #cc0000;
+        }
+        i {
+          font-size: 20px;
+        }
+      </style>
+   
+      <button class="button customer-support" onclick="makeCall('customer')">
+        <i>📞</i> Customer Support
+      </button>
+      <button class="button emergency-call" onclick="makeCall('emergency')">
+        <i>🚨</i> Emergency Call
+      </button>
+    
+     
+   
+    
